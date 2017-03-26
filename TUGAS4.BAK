@@ -57,10 +57,11 @@ clauses
   owns_probably(X,Object):-
 	owns(X,Object).
 
-/* * * * * * * * * * * * * * * * * * * * * * *
- * Suspect all those who own a weapon with   *
- * which Susan could have been killed.       *
- * * * * * * * * * * * * * * * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * * * * * *
+ * Dicurigai semua orang yang memiliki senjata *
+ *  yang kerjanya mirip dengan 
+ *  senjata penyebab  susan terbunuh  	       *
+ * * * * * * * * * * * * * * * * * * * * * *   * */
 
   suspect(X):-
 	killed_with(susan,Weapon) ,
@@ -98,7 +99,7 @@ clauses
   killer(Killer):-
 	person(Killer,_,_,_),
 	killed(Killed),
-	Killed <> Killer, /* It is not a suicide */
+	Killed <> Killer, /* Bukan bunuh diri */
 	suspect(Killer),
 	smeared_in(Killer,Goo),
 	smeared_in(Killed,Goo).
@@ -109,3 +110,6 @@ goal
 
 /*penggunaan "<>" artinya tidak sama, pertama prolog akan coba membuktikan jika killed atau tidak killed gagal maka akan menccoba
 untuk mencari alternatif yang lain sehingga sisa klausa yang tidak pernah ter eksekusi akan terpakai  */
+
+/*Pembunuan susan ini terjadi karna motiv tidak memiki uang dan juga kecemburuan sehingga memunculkan dendam di hati 
+yang berujung menjadi pembunuhan */

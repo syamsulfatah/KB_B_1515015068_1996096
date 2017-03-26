@@ -113,3 +113,9 @@ untuk mencari alternatif yang lain sehingga sisa klausa yang tidak pernah ter ek
 
 /*Pembunuan susan ini terjadi karna motiv tidak memiki uang dan juga kecemburuan sehingga memunculkan dendam di hati 
 yang berujung menjadi pembunuhan */
+/*DUGAAN MOTIV PEMBUNUHAN */
+% Tersangka bukanlah korban artinya korban tidak bunuh diri scara langsung
+% pada saat pengecekan kecurigaan pertama setiap orang bisa menjadi tersangka
+%saat di cek barang bukti ialah gagang kayu/pentungan yang memiliki bercak darah spt korban
+%kemudian cek apakah ada bukti darah di tubuh nya, ternyata bert yaitu pentungan nya
+%ternodai oleh darah susan, dari situlah terindikasi bahwa bert merupakan pembunuh nya
