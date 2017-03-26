@@ -98,7 +98,7 @@ clauses
   killer(Killer):-
 	person(Killer,_,_,_),
 	killed(Killed),
-	Killed < Killer, /* It is not a suicide */
+	Killed <> Killer, /* It is not a suicide */
 	suspect(Killer),
 	smeared_in(Killer,Goo),
 	smeared_in(Killed,Goo).
@@ -107,4 +107,5 @@ goal
   killer(X).
 /*Bert sebagai pelaku bersalah karna ia memiliki motiv dan memiliki barang yang berlumuran sama seperti si korban */
 
-/* */
+/*penggunaan "<>" artinya tidak sama, pertama prolog akan coba membuktikan jika killed atau tidak killed gagal maka akan menccoba
+untuk mencari alternatif yang lain sehingga sisa klausa yang tidak pernah ter eksekusi akan terpakai  */
